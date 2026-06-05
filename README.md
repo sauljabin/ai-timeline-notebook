@@ -22,3 +22,7 @@ Launch JupyterLab:
 ```sh
 poetry run jupyter lab
 ```
+
+## AI Assistance
+
+This project was created with AI-assisted development using OpenAI Codex powered by GPT-5.
