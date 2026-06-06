@@ -52,6 +52,20 @@ poetry check --lock
 - Keep generated checkpoint files out of commits; `.ipynb_checkpoints/` is ignored.
 - Keep notebook helper code small and local unless a repeated pattern clearly needs extraction.
 - If adding plots or deterministic examples, prefer reproducible code cells and checked-in helper scripts over hidden manual state.
+- Keep notebooks standardized around this structure:
+
+```text
+# Year Topic
+## High-Level Ideas
+## Example: ...
+## Why This Mattered
+```
+
+- The opening title cell should name the year and topic, then briefly place the topic in AI history.
+- `## High-Level Ideas` should explain the core concepts and vocabulary before code.
+- `## Example: ...` sections should contain the runnable demonstration or worked example. Use multiple example sections when the notebook naturally has more than one demonstration, such as a controller and a plot.
+- `## Why This Mattered` should close the notebook with concise historical significance.
+- Preserve this structure when adding or revising notebooks unless the user explicitly asks for a different format.
 
 ## Git Hygiene
 
