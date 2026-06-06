@@ -1,0 +1,22 @@
+version: 1
+
+project:
+  title: AI Timeline Notebook
+  description: Jupyter notebooks for the history of AI.
+  keywords:
+    - artificial intelligence
+    - history
+    - jupyter
+    - notebooks
+  toc:
+    - file: README.md
+    - title: Notebooks
+      children:
+        - file: notebooks/1957-perceptron.ipynb
+        - file: notebooks/1965-fuzzy-logic.ipynb
+        - file: notebooks/1972-prolog.ipynb
+        - file: notebooks/1975-genetic-algorithms.ipynb
+        - file: notebooks/1986-backpropagation.ipynb
+
+site:
+  template: book-theme

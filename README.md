@@ -26,6 +26,20 @@ Launch JupyterLab:
 poetry run jupyter lab
 ```
 
+Run Jupyter Book website:
+
+```sh
+poetry run jupyter book start
+```
+
+Build the notebooks as a Jupyter Book website:
+
+```sh
+poetry run jupyter book build --html
+```
+
+The book structure is configured in `myst.yml`, with this README as the opening page and the notebooks listed in historical order.
+
 ## AI Assistance
 
 This project was created with AI-assisted development using OpenAI Codex powered by GPT-5.

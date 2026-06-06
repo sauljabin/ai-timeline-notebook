@@ -932,6 +932,28 @@ files = [
 referencing = ">=0.31.0"
 
 [[package]]
+name = "jupyter-book"
+version = "2.1.5"
+description = "Create computational narratives that are reusable, reproducible, and interactive."
+optional = false
+python-versions = ">=3.9"
+groups = ["main"]
+files = [
+    {file = "jupyter_book-2.1.5-py3-none-any.whl", hash = "sha256:19eedc70bb8d5ed5de0f7f3cb8de312da3a50900dcdda9b0c5a9704410a7758d"},
+    {file = "jupyter_book-2.1.5.tar.gz", hash = "sha256:6a43a1991365b5896fa789e9df1687b9b37f91d06d9eb7cc94fc628ac27e662e"},
+]
+
+[package.dependencies]
+ipykernel = "*"
+jupyter-core = "*"
+jupyter-server = "*"
+nodeenv = ">=1.9.1"
+platformdirs = ">=4.2.2"
+
+[package.extras]
+docs = ["markdown", "pandas"]
+
+[[package]]
 name = "jupyter-client"
 version = "8.9.0"
 description = "Jupyter protocol implementation and client libraries"
@@ -1390,6 +1412,18 @@ groups = ["main"]
 files = [
     {file = "nest_asyncio-1.6.0-py3-none-any.whl", hash = "sha256:87af6efd6b5e897c81050477ef65c62e2b2f35d51703cae01aff2905b1852e1c"},
     {file = "nest_asyncio-1.6.0.tar.gz", hash = "sha256:6f172d5449aca15afd6c646851f4e31e02c598d553a667e38cafa997cfec55fe"},
+]
+
+[[package]]
+name = "nodeenv"
+version = "1.10.0"
+description = "Node.js virtual environment builder"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
+groups = ["main"]
+files = [
+    {file = "nodeenv-1.10.0-py2.py3-none-any.whl", hash = "sha256:5bb13e3eed2923615535339b3c620e76779af4cb4c6a90deccc9e36b274d3827"},
+    {file = "nodeenv-1.10.0.tar.gz", hash = "sha256:996c191ad80897d076bdfba80a41994c2b47c68e224c542b48feba42ba00f8bb"},
 ]
 
 [[package]]
@@ -2551,4 +2585,4 @@ test = ["pytest", "websockets"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4.0"
-content-hash = "09112bc30a2c01e349dc50f2d673311fc3505740de81e01ad85fe88f860f8a4d"
+content-hash = "2b654fa76fcb1ffce4a5a1777aea7b6f66d01da7c33cd3c467c8a9a9034f3201"
